@@ -416,6 +416,9 @@ img {
   border-radius: 4px;
   background: #2e2f42;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: #ffffff;
+
+  padding-left: 16px;
 }
 .mail-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -423,36 +426,38 @@ img {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.04em;
-  padding: 8px 0px 8px 16px;
 }
 .footer-form {
   margin-left: 80px;
 }
 .subscribe-button {
   background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
   border-radius: 4px;
   border: none;
   color: #ffffff;
   padding: 8px 24px;
-  width: 160px;
+  width: 165px;
   height: 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-left: 24px;
 
   position: relative;
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .subscribe-button:hover {
   background: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-.submit-group {
-  display: flex;
-  margin-left: 24px;
-}
+
 .telegram-svg {
   margin-left: 16px;
 }
@@ -623,4 +628,156 @@ img {
 .modal-button:hover {
   background-color: #404bbf;
   fill: white;
+}
+.backdrop-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.modal-margin {
+  margin-bottom: 0px;
+}
+.person-svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  fill: #2e2f42;
+  pointer-events: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus + .person-svg,
+.modal-input:hover + .person-svg {
+  fill: #4d5ae5;
+}
+.modal-label {
+  position: relative;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+.label-margin {
+  margin-bottom: 0;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 0 8px 38px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus,
+.modal-input:hover {
+  border: 1px solid #4d5ae5;
+}
+.comment-field {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  padding: 8px 0 0 16px;
+  width: 360px;
+  height: 120px;
+  resize: none;
+  margin-bottom: 16px;
+}
+.comment-field:focus,
+.comment-field:hover {
+  border: 1px solid #4d5ae5;
+}
+.comment-field::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-label-text {
+  display: block;
+  margin-bottom: 4px;
+}
+.privacy-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.privacy-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #757575;
+  margin-left: 8px;
+}
+.privacy-label::before {
+  display: block;
+  content: " ";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.privacy-input:checked + .privacy-label::before {
+  background-color: #404bbf;
+}
+.privacy-link {
+  color: #4d5ae5;
+}
+.checkbox-label {
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.send-button {
+  background: #4d5ae5;
+  margin: 0 auto;
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  border: none;
+
+  color: #ffffff;
+}
+.send-button:hover {
+  background: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
