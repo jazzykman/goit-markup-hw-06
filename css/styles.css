@@ -724,7 +724,7 @@ img {
 }
 .privacy-label {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 
   font-weight: 400;
@@ -732,11 +732,12 @@ img {
   line-height: 16px;
   letter-spacing: 0.04em;
   color: #757575;
-  margin-left: 8px;
+
   margin-bottom: 24px;
 }
 .privacy-label::before {
   display: block;
+
   content: " ";
   width: 16px;
   height: 16px;
@@ -746,6 +747,7 @@ img {
   margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .privacy-input:checked + .privacy-label::before {
   background-color: #404bbf;
   background-image: url(../images/Vector.svg);
