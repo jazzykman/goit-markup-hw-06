@@ -733,6 +733,7 @@ img {
   letter-spacing: 0.04em;
   color: #757575;
   margin-left: 8px;
+  margin-bottom: 24px;
 }
 .privacy-label::before {
   display: block;
@@ -747,6 +748,10 @@ img {
 }
 .privacy-input:checked + .privacy-label::before {
   background-color: #404bbf;
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .privacy-link {
   color: #4d5ae5;
